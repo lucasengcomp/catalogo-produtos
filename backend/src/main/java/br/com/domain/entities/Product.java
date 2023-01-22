@@ -10,8 +10,8 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.time.Instant;
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 
 @Getter
@@ -27,7 +27,7 @@ public class Product implements Serializable {
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
     @Column(name = "id_product")
-    private Long id;
+    private UUID id;
 
     private String name;
 
@@ -38,13 +38,11 @@ public class Product implements Serializable {
     @Column(name = "img_url")
     private String imgUrl;
 
-    private LocalDateTime date;
-
-    @Column(name = "data_criacao")
+    @Column(name = "created_at")
     @CreationTimestamp
-    private LocalDateTime dataCriacao;
+    private LocalDateTime createdAt;
 
-    @Column(name = "data_atualizacao")
+    @Column(name = "updated_at")
     @UpdateTimestamp
-    private LocalDateTime dataAtualizacao;
+    private LocalDateTime updatedAt;
 }
