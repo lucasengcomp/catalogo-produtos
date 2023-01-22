@@ -39,6 +39,15 @@ Todas as mudanças, devem seguir a padronização seguinte:
 19. 🥅 :goal_net: Quando modificado tratamento de erros padrão
 
 
+## [1.0.2-SNAPSHOT] - 22/01/2023
+### `Added` :sparkles:
+* :sparkles: Criado busca de produto por id
+* :sparkles: Adicionado mapper toDTO
+
+### `Changed` :arrows_clockwise:
+* :arrows_clockwise: Alterado DTO, campos createAt, updatedAt
+
+
 ## [1.0.1-SNAPSHOT] - 22/01/2023
 ### `Added` :sparkles:
 * :sparkles: Entidade Product
