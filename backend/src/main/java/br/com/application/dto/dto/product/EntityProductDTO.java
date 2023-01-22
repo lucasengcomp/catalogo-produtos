@@ -1,4 +1,4 @@
-package br.com.application.dto.product;
+package br.com.application.dto.dto.product;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,6 +7,7 @@ import lombok.Setter;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 @Getter
 @Setter
@@ -15,12 +16,11 @@ import java.time.LocalDateTime;
 public class EntityProductDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    private Long id;
+    private UUID id;
     private String name;
     private String description;
     private Double price;
     private String imgUrl;
-    private LocalDateTime date;
-    private LocalDateTime dataCriacao;
-    private LocalDateTime dataAtualizacao;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
 }

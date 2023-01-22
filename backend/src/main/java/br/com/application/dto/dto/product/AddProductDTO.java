@@ -1,4 +1,4 @@
-package br.com.application.dto.product;
+package br.com.application.dto.dto.product;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
