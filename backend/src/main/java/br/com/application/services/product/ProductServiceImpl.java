@@ -3,7 +3,7 @@ package br.com.application.services.product;
 import br.com.application.dto.dto.product.EntityProductDTO;
 import br.com.application.mappers.ProductMapper;
 import br.com.domain.entities.Product;
-import br.com.domain.infra.data.ProductRepositoryImpl;
+import br.com.infra.data.ProductRepositoryImpl;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;

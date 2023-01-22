@@ -1,4 +1,4 @@
-package br.com.domain.infra.data;
+package br.com.infra.data;
 
 import br.com.domain.repositories.ProductRepository;
 
